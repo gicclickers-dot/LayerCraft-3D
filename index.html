@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LayerCraft 3D - Custom 3D Printing and Creative Products across Bangladesh.">
+<title>LayerCraft 3D | Create Beyond Limits</title>
+<style>
+:root{--bg:#071526;--card:#10243b;--blue:#39a9ff;--cyan:#65e4e8;--white:#f5f9ff;--muted:#a9bbce}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:var(--bg);color:var(--white);line-height:1.7}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1180px;margin:auto}
+.navbar{position:sticky;top:0;z-index:100;background:#071526f5;border-bottom:1px solid #203b55}
+.nav-content{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:25px;font-weight:800}.logo span{color:var(--blue)}
+.nav-links{display:flex;gap:18px;flex-wrap:wrap}
+.nav-links a{font-size:14px;color:var(--muted)}
+.nav-links a:hover{color:var(--cyan)}
+.btn{display:inline-block;padding:12px 23px;border-radius:9px;background:linear-gradient(120deg,var(--blue),var(--cyan));color:#061629;font-weight:800;transition:.3s}
+.btn:hover{transform:translateY(-3px)}
+.btn-outline{background:transparent;color:white;border:1px solid var(--blue);margin-left:8px}
+.hero{padding:90px 0;background:radial-gradient(ellipse at 80% 35%,#123d60,transparent 48%),linear-gradient(135deg,#071526,#0b2037)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:45px}
+.tag{color:var(--cyan);font-size:13px;font-weight:bold;letter-spacing:3px;text-transform:uppercase}
+.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.12;margin:20px 0}
+.hero h1 span{color:var(--blue)}
+.hero p{color:var(--muted);max-width:560px;margin-bottom:28px}
+.hero-art{min-height:330px;border:1px solid #31516d;border-radius:28px;background:radial-gradient(circle,#1c5c86,#10243b 65%);display:flex;align-items:center;justify-content:center;position:relative}
+.cube{font-size:125px;filter:drop-shadow(0 15px 25px #0008)}
+.art-label{position:absolute;bottom:20px;color:var(--cyan);letter-spacing:3px;font-size:11px}
+section{padding:75px 0}
+.section-heading{text-align:center;margin-bottom:40px}
+.section-heading h2{font-size:clamp(28px,4vw,42px);margin:8px 0}
+.section-heading p{color:var(--muted)}
+.services-grid,.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card,.project-card{background:var(--card);border:1px solid #233e59;border-radius:16px;padding:24px;transition:.3s}
+.service-card:hover,.project-card:hover{transform:translateY(-5px);border-color:var(--blue)}
+.service-icon{font-size:35px;margin-bottom:12px}
+.service-card p,.project-card p{color:var(--muted);font-size:14px}
+.projects{background:#091a2c}
+.project-visual{height:140px;border-radius:12px;background:linear-gradient(135deg,#163c5c,#1d6881);display:flex;align-items:center;justify-content:center;font-size:60px;margin-bottom:15px}
+.project-type{color:var(--cyan);font-size:11px;letter-spacing:1px}
+.project-card h3{margin:8px 0}
+.project-card .details{margin-top:10px;font-size:13px;color:#c2d6e9}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about-box{background:linear-gradient(145deg,#102b46,#0c1d30);border:1px solid #284866;padding:30px;border-radius:20px}
+.about-box p,.about-grid p{color:var(--muted);margin-top:12px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.feature{color:var(--cyan);font-size:14px}
+.contact{background:linear-gradient(130deg,#10304c,#071526);text-align:center}
+.contact p{color:var(--muted);margin:12px auto 25px}
+.contact-number{display:block;font-size:22px;margin:15px 0 22px;font-weight:bold}
+.location{margin-top:22px;color:var(--cyan)}
+footer{padding:28px 0;text-align:center;color:var(--muted);border-top:1px solid #203b55;font-size:13px}
+footer span{color:var(--blue)}
+@media(max-width:850px){.hero-grid,.about-grid{grid-template-columns:1fr}.services-grid,.projects-grid{grid-template-columns:repeat(2,1fr)}.nav-content{padding:15px 0;flex-direction:column}.nav-links{justify-content:center;gap:13px}}
+@media(max-width:550px){.services-grid,.projects-grid{grid-template-columns:1fr}.hero{padding:60px 0}.btn-outline{margin:10px 0 0}.features{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="navbar">
+<div class="container nav-content">
+<a href="index.html" class="logo">LayerCraft <span>3D.</span></a>
+<nav class="nav-links">
+<a href="#home">Home</a>
+<a href="services.html">Services</a>
+<a href="materials.html">Materials</a>
+<a href="#projects">Projects</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="tag">Innovation Through 3D Printing</div>
+<h1>Create Beyond <span>Limits.</span></h1>
+<p>Transform your ideas into reality with precision 3D printing. From creative designs and prototypes to custom parts, LayerCraft 3D brings your imagination to life.</p>
+<a class="btn" href="#projects">Explore Projects</a>
+<a class="btn btn-outline" href="https://wa.me/8801343204041">Get a Quote</a>
+</div>
+<div class="hero-art">
+<div class="cube">🧊</div>
+<div class="art-label">DESIGN • PRINT • CREATE</div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-heading">
+<div class="tag">What We Do</div>
+<h2>Our Services</h2>
+<p>Creative solutions powered by modern 3D printing.</p>
+</div>
+<div class="services-grid">
+<div class="service-card"><div class="service-icon">🖨️</div><h3>Custom 3D Printing</h3><p>Custom-made 3D printed objects based on your ideas and requirements.</p></div>
+<div class="service-card"><div class="service-icon">📐</div><h3>3D Design & Modeling</h3><p>Digital 3D models for creative products, components and prototypes.</p></div>
+<div class="service-card"><div class="service-icon">🧩</div><h3>Rapid Prototyping</h3><p>Turn concepts into physical prototypes for testing and development.</p></div>
+<div class="service-card"><div class="service-icon">⚙️</div><h3>Custom Parts</h3><p>Functional replacement parts and custom components.</p></div>
+<div class="service-card"><div class="service-icon">🎨</div><h3>Creative Products</h3><p>Decorative objects, gifts, organizers and personalized designs.</p></div>
+<div class="service-card"><div class="service-icon">📦</div><h3>Small Batch Production</h3><p>Produce multiple custom pieces for personal or business projects.</p></div>
+</div>
+</div>
+</section>
+
+<section class="projects" id="projects">
+<div class="container">
+<div class="section-heading">
+<div class="tag">Our Portfolio</div>
+<h2>Featured Projects</h2>
+<p>Explore creative 3D printing concepts and product ideas.</p>
+</div>
+<div class="projects-grid">
+<div class="project-card"><div class="project-visual">🍄</div><div class="project-type">Decorative Concept</div><h3>Mushroom Buddy Trio</h3><p>A playful trio of mushroom-inspired decorative models.</p><div class="details">Material: PLA | Use: Desk decor and gifts</div></div>
+<div class="project-card"><div class="project-visual">🪴</div><div class="project-type">Home & Garden</div><h3>Spiral Planter</h3><p>A modern spiral-shaped planter for small plants.</p><div class="details">Material: PLA/PETG | Use: Indoor decoration</div></div>
+<div class="project-card"><div class="project-visual">🌱</div><div class="project-type">Plant Decor</div><h3>Honeycomb Planter</h3><p>A geometric planter concept with a honeycomb pattern.</p><div class="details">Material: PLA | Use: Succulent display</div></div>
+<div class="project-card"><div class="project-visual">🏠</div><div class="project-type">Desk Accessories</div><h3>3D Printed Desk Decor</h3><p>Modern decorative accessories for workspace styling.</p><div class="details">Material: PLA | Use: Office and home desk</div></div>
+<div class="project-card"><div class="project-visual">🎨</div><div class="project-type">Color Collection</div><h3>Color Pop Mini Planters</h3><p>Compact colorful planters for small indoor plants.</p><div class="details">Material: PLA | Use: Mini plant display</div></div>
+<div class="project-card"><div class="project-visual">🏺</div><div class="project-type">Art & Design</div><h3>Sculptural Lattice Vases</h3><p>Artistic lattice-inspired vase designs for decoration.</p><div class="details">Material: PLA | Use: Decorative display</div></div>
+<div class="project-card"><div class="project-visual">🔧</div><div class="project-type">Functional Concept</div><h3>Custom Utility Parts</h3><p>Custom-designed components for practical everyday needs.</p><div class="details">Material: PLA/PETG | Use: Custom applications</div></div>
+<div class="project-card"><div class="project-visual">📱</div><div class="project-type">Accessories</div><h3>Phone Stand</h3><p>A compact stand concept for phones and small devices.</p><div class="details">Material: PLA | Use: Desk accessory</div></div>
+<div class="project-card"><div class="project-visual">🗂️</div><div class="project-type">Organization</div><h3>Modular Organizer</h3><p>Custom storage concept for small tools and accessories.</p><div class="details">Material: PLA/PETG | Use: Workspace organization</div></div>
+<div class="project-card"><div class="project-visual">✨</div><div class="project-type">Personalized Gift</div><h3>Custom Nameplate</h3><p>Personalized nameplate concept for home or office.</p><div class="details">Material: PLA | Use: Customized gifts</div></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container about-grid">
+<div>
+<div class="tag">About LayerCraft</div>
+<h2 style="font-size:38px;margin-top:10px">Ideas Into Reality.</h2>
+<p>LayerCraft 3D is focused on creative 3D printing, custom product design and practical solutions. We aim to help individuals, creators and businesses turn ideas into physical products.</p>
+<div class="features">
+<div class="feature">✓ Custom Designs</div>
+<div class="feature">✓ Creative Solutions</div>
+<div class="feature">✓ Prototype Support</div>
+<div class="feature">✓ Nationwide Service</div>
+</div>
+</div>
+<div class="about-box">
+<h2>Designed With Purpose.</h2>
+<p>From a simple idea to a detailed 3D model, every project begins with understanding your requirements. Contact us to discuss your next project.</p>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+<div class="tag">Let's Build Something</div>
+<h2 style="font-size:38px;margin-top:10px">Start Your Project Today</h2>
+<p>Have an idea, a design or a custom printing requirement? Talk to us on WhatsApp.</p>
+<a class="contact-number" href="https://wa.me/8801343204041">+880 1343-204041</a>
+<a class="btn" href="https://wa.me/8801343204041?text=Hello%20LayerCraft%203D%2C%20I%20want%20to%20discuss%20a%20project.">Chat on WhatsApp</a>
+<div class="location">📍 Serving All Across Bangladesh 🇧🇩</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<p>© 2026 <span>LayerCraft 3D.</span> All Rights Reserved.</p>
+<p>Create Beyond Limits.</p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact LayerCraft 3D for custom 3D printing and design projects across Bangladesh.">
+<title>Contact Us | LayerCraft 3D</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#071526;color:#eef6ff;line-height:1.7}
+a{text-decoration:none;color:inherit}
+header{background:#0b1e33;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px;border-bottom:1px solid #183752}
+.logo{font-size:23px;font-weight:bold;color:#35c8ff}
+nav{display:flex;gap:17px;flex-wrap:wrap}
+nav a{font-size:13px;color:#d4e5f5}
+nav a:hover{color:#35c8ff}
+.hero{text-align:center;padding:75px 20px 55px;background:linear-gradient(135deg,#0b2947,#071526)}
+.tag{color:#35c8ff;font-size:13px;letter-spacing:3px;text-transform:uppercase}
+h1{font-size:clamp(38px,7vw,58px);margin:12px 0}
+.hero p{max-width:650px;margin:auto;color:#b9cce0}
+.container{max-width:1050px;margin:auto;padding:55px 6%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#102740;border:1px solid #1c4260;border-radius:15px;padding:26px}
+.card .emoji{font-size:36px}
+.card h2{color:#48ceff;margin:12px 0 8px;font-size:21px}
+.card p{color:#b6c9dc;font-size:14px}
+.number{font-size:17px;font-weight:bold;color:#fff;word-break:break-word}
+.btn{display:inline-block;background:#19b9ee;color:#041525;font-weight:bold;padding:12px 22px;border-radius:8px;margin-top:17px}
+.btn:hover{background:#72ddff}
+.form-box{background:#102740;border:1px solid #1c4260;border-radius:15px;padding:28px;margin-top:35px}
+.form-box h2{text-align:center;margin-bottom:20px}
+label{display:block;margin:13px 0 6px;color:#c7d9e9}
+input,textarea,select{width:100%;padding:13px;border-radius:8px;border:1px solid #31516c;background:#071526;color:white;font-size:15px}
+textarea{min-height:110px;resize:vertical}
+.form-btn{width:100%;border:0;cursor:pointer;font-size:16px}
+.note{text-align:center;color:#9eb4ca;font-size:13px;margin-top:12px}
+footer{text-align:center;padding:25px;color:#8da6bd;border-top:1px solid #183752;font-size:13px}
+@media(max-width:600px){header{justify-content:center}nav{justify-content:center}.container{padding:40px 5%}}
+</style>
+</head>
+<body>
+
+<header>
+<a href="index.html" class="logo">LayerCraft 3D</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="materials.html">Materials</a>
+<a href="index.html#projects">Projects</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="tag">Get in Touch</div>
+<h1>Contact Us</h1>
+<p>Have an idea or a custom 3D printing project? We would love to hear from you.</p>
+</section>
+
+<section class="container">
+<div class="grid">
+
+<div class="card">
+<div class="emoji">💬</div>
+<h2>WhatsApp</h2>
+<p>Contact us directly to discuss your project, design or product requirements.</p>
+<p class="number">+880 1343-204041</p>
+<a class="btn" href="https://wa.me/8801343204041?text=Hello%20LayerCraft%203D%2C%20I%20want%20to%20discuss%20a%203D%20printing%20project." target="_blank">Chat on WhatsApp</a>
+</div>
+
+<div class="card">
+<div class="emoji">📍</div>
+<h2>Our Service Area</h2>
+<p>We aim to serve customers from different cities and locations throughout Bangladesh.</p>
+<p class="number">All Across Bangladesh 🇧🇩</p>
+</div>
+
+<div class="card">
+<div class="emoji">🕒</div>
+<h2>Project Enquiries</h2>
+<p>Send your project idea, reference images, preferred size and requirements through WhatsApp.</p>
+<p class="number">Let's Create Together!</p>
+</div>
+
+</div>
+
+<div class="form-box">
+<h2>Send Your Project Enquiry</h2>
+<form id="contactForm">
+<label for="name">Your Name</label>
+<input type="text" id="name" placeholder="Enter your name" required>
+
+<label for="phone">Your Phone Number</label>
+<input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+<label for="service">Select a Service</label>
+<select id="service" required>
+<option value="">Choose a service</option>
+<option>Custom 3D Printing</option>
+<option>3D Design & Modeling</option>
+<option>Rapid Prototyping</option>
+<option>Custom Parts</option>
+<option>Creative Products</option>
+<option>Other Enquiry</option>
+</select>
+
+<label for="message">Project Details</label>
+<textarea id="message" placeholder="Describe your project or idea..." required></textarea>
+
+<button class="btn form-btn" type="submit">Send Enquiry on WhatsApp</button>
+</form>
+<p class="note">Your enquiry will open in WhatsApp for you to review and send.</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 LayerCraft 3D. All Rights Reserved.</p>
+<p>Creative Ideas. Precision Printing.</p>
+<p>Serving All Across Bangladesh 🇧🇩</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit",function(e){
+e.preventDefault();
+const name=document.getElementById("name").value.trim();
+const phone=document.getElementById("phone").value.trim();
+const service=document.getElementById("service").value;
+const message=document.getElementById("message").value.trim();
+
+const text="Hello LayerCraft 3D!\n\nName: "+name+"\nPhone: "+phone+"\nService: "+service+"\nProject Details: "+message;
+const url="https://wa.me/8801343204041?text="+encodeURIComponent(text);
+window.open(url,"_blank");
+});
+</script>
+
+</body>
+</html>
+ion-desc
